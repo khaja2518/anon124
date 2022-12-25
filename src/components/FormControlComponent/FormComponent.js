@@ -15,7 +15,7 @@ class FormComponent extends Component {
     commentHandler = (event) => {
         this.setState({
             comment: event.target.value
-        },()=>{})
+        }, () => { })
     }
 
     onSubmitHandler = (event) => {
@@ -28,11 +28,11 @@ class FormComponent extends Component {
             <div className=''>
                 <form onSubmit={this.onSubmitHandler}>
                     <div>
-                        
+
                         <label>User Name</label>
                         <input type='text' value={this.state.username} onChange={this.usernameHandler} />
                         <label>Comment</label>
-                        <textarea  value={this.state.comment} onChange={this.commentHandler} />
+                        <textarea value={this.state.comment} onChange={this.commentHandler} />
                         <button type='submit'>Submit</button>
                     </div>
                 </form>

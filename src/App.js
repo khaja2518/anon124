@@ -5,6 +5,10 @@ import SampleComponent from './components/SampleComponent/sample'
 import PropsComponent from './components/PropsComponent/propsComponent';
 import PersonLIstConponent from './components/PersonList/PersonListComponent';
 import FormComponent from './components/FormControlComponent/FormComponent';
+import Parent from './components/PureComponents/Parent';
+import ParentComp from './components/FunctionalPureComponent/ParentComp';
+import Refs from './components/Refs/Refs';
+import Portals from './components/portals/Portal';
 
 function App() {
 
@@ -27,8 +31,12 @@ function App() {
     <div className="App">
       <SampleComponent />
       <PropsComponent Obj={obj} handleData={changeData} />
-      <PersonLIstConponent/>
-      <FormComponent/>
+      <PersonLIstConponent />
+      <FormComponent />
+      {/* <Parent></Parent> */}
+      <ParentComp />
+      <Refs></Refs>
+      <Portals></Portals>
     </div>
   );
 }
